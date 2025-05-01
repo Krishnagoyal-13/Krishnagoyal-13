@@ -30,7 +30,7 @@ const Experience = () => {
       title: "Data Analyst",
       company: "Vero Ventures",
       location: "Abbotsford, BC",
-      period: "Jan 2023 - Present",
+      period: "Jan 2025 - Present",
       description:
         "Built a comprehensive comparison system analyzing whole life participating insurance policies from leading Canadian providers like Canada Life, Sun Life, Equitable Life, and Manulife. Focused on reverse-engineering product structures including Guaranteed Cash Value (GCV), Total Cash Value (TCV), Premium Patterns, and Death Benefit Growth. Developed data-driven models and visualizations to compare policies across multiple scenarios, helping financial advisors understand product behaviors and recommend optimized solutions to clients.",
     },
@@ -38,7 +38,7 @@ const Experience = () => {
       title: "NLP Engineer",
       company: "University Project",
       location: "Abbotsford, BC",
-      period: "Jan 2023 - Present",
+      period: "Jan 2025 - Present",
       description:
         "Designed and developed a real-time AI-powered Immigration Storyboard Web Application using Next.js, TypeScript, and Resend API. This project enables users to explore complex Canadian immigration processes like Study Permit, PR, PGWP, and Citizenship through dynamically generated step-by-step storyboards powered by LLM (Large Language Models). Integrated a passwordless login system using OTP email authentication for enhanced security and user experience. Deployed the full-stack application on Vercel with optimized serverless architecture and dynamic API routing",
     },
