@@ -2,9 +2,15 @@
 
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "./ThemeProvider"
+import { useEffect } from "react"
 
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme()
+
+  // Set theme to dark by default when component mounts
+  useEffect(() => {
+    setTheme("dark")
+  }, [setTheme])
 
   return (
     <button

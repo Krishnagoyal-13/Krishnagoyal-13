@@ -53,22 +53,13 @@ const About = () => {
                   </li>
                   <li className="flex items-center text-gray-600 dark:text-gray-300">
                     <Phone className="mr-3 text-primary" size={18} />
-                    <span>+1 (555) 123-4567</span>
+                    <span>+1 (604) 832-9175</span>
                   </li>
                   <li className="flex items-center text-gray-600 dark:text-gray-300">
                     <MapPin className="mr-3 text-primary" size={18} />
-                    <span>New York, NY</span>
+                    <span>Abbotsford, BC, Canada</span>
                   </li>
                 </ul>
-                <div className="mt-6">
-                  <a
-                    href="#"
-                    className="inline-flex items-center justify-center w-full bg-primary text-white font-bold py-2 px-4 rounded-md hover:bg-primary/80 transition duration-300"
-                  >
-                    <FileText className="mr-2" size={18} />
-                    Download Resume
-                  </a>
-                </div>
               </div>
             </div>
           </div>
@@ -77,7 +68,7 @@ const About = () => {
               <h3 className="text-2xl font-semibold mb-4 dark:text-white">Who I Am</h3>
               <div className="space-y-4">
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  I'm a passionate Data Analyst with 2+ years of experience in machine learning, statistical analysis,
+                  I'm a passionate Data Analyst with 1+ years of experience in machine learning, statistical analysis,
                   and data visualization. My expertise lies in developing predictive models and extracting meaningful
                   insights from complex datasets.
                 </p>
@@ -102,11 +93,11 @@ const About = () => {
                     <div className="flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-400 mt-1">
                       <span className="flex items-center">
                         <Calendar size={14} className="mr-1" />
-                        2022-2024
+                        2021-2025
                       </span>
                       <span className="flex items-center">
                         <MapPin size={14} className="mr-1" />
-                        University of the Cumberlands
+                        University of the Fraser Valley
                       </span>
                     </div>
                     <p className="mt-2 text-gray-600 dark:text-gray-300">
@@ -118,31 +109,7 @@ const About = () => {
               </div>
             </div>
 
-            <div>
-              <h3 className="text-2xl font-semibold mb-4 dark:text-white">Experience</h3>
-              <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
-                <div className="flex items-start gap-4">
-                  <Briefcase className="text-primary mt-1" size={24} />
-                  <div>
-                    <h4 className="font-semibold text-lg dark:text-white">Data Analyst</h4>
-                    <div className="flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-400 mt-1">
-                      <span className="flex items-center">
-                        <Calendar size={14} className="mr-1" />
-                        2021-Present
-                      </span>
-                      <span className="flex items-center">
-                        <MapPin size={14} className="mr-1" />
-                        Tech Solutions Inc.
-                      </span>
-                    </div>
-                    <p className="mt-2 text-gray-600 dark:text-gray-300">
-                      Analyze complex datasets to identify trends and patterns. Develop predictive models using machine
-                      learning algorithms. Create interactive dashboards for data visualization.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

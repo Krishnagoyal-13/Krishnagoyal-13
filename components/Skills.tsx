@@ -26,12 +26,12 @@ const Skills = () => {
   }, [])
 
   const technicalSkills = [
-    { name: "Python", level: 90 },
-    { name: "SQL", level: 85 },
+    { name: "Python", level: 100 },
+    { name: "SQL", level: 100 },
     { name: "Machine Learning", level: 80 },
-    { name: "Data Visualization", level: 85 },
-    { name: "Statistical Analysis", level: 75 },
-    { name: "Deep Learning", level: 70 },
+    { name: "Data Visualization", level: 100 },
+    { name: "Statistical Analysis", level: 85 },
+    { name: "Deep Learning", level: 80 },
   ]
 
   const toolsAndFrameworks = [

@@ -1,7 +1,8 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { ExternalLink, Github, BarChart4, Brain } from "lucide-react"
+import { ExternalLink, Github, BarChart4, Brain, LineChart } from "lucide-react"
+import Image from "next/image"
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -28,6 +29,32 @@ const Projects = () => {
 
   const projectList = [
     {
+      title: "Insurance Analysis Dashboard",
+      description:
+        "Developed a comprehensive comparison system analyzing whole life participating insurance policies from leading Canadian providers. Created data-driven models and visualizations to compare policies across multiple scenarios, helping financial advisors understand product behaviors.",
+      image: "/images/insurance-chart.png",
+      category: "data-visualization",
+      technologies: ["Tableau", "Python", "SQL", "Data Modeling"],
+      links: {
+        demo: "https://www.dynamicneedsanalysis.com/",
+        github: "https://github.com/Krishnagoyal-13/ChartVisualization",
+      },
+      icon: LineChart,
+    },
+    {
+      title: "Immigration Storyboard",
+      description:
+        "Designed and developed a real-time AI-powered Immigration Storyboard Web Application using Next.js, TypeScript, and Resend API. This project helps users navigate the complex Canadian immigration process with personalized guidance.",
+      image: "/images/immigration-storyboard.png",
+      category: "data-analysis",
+      technologies: ["Next.js", "TypeScript", "AI", "PostgreSQL"],
+      links: {
+        demo: "https://immigration-storyboard.vercel.app",
+        github: "https://github.com/Krishnagoyal-13/immigration-storyboard",
+      },
+      icon: BarChart4,
+    },
+    {
       title: "American Sign Language Interpreter",
       description:
         "Developed a machine learning model to predict American Sign language, converting Sign to Text using Mobile Deployed System in Real Time.",
@@ -36,48 +63,9 @@ const Projects = () => {
       technologies: ["TensorFlow", "OpenCV", "Python", "Flutter"],
       links: {
         demo: "#",
-        github: "#",
+        github: "https://github.com/Krishnagoyal-13/AmericanSignlanguageInterpreter",
       },
       icon: Brain,
-    },
-    {
-      title: "Insurance Analysis Dashboard",
-      description:
-        "Created a model to predict the Key features of policy for Visualization for better Comparision in Differet Companies.",
-      image: "/placeholder.svg?height=400&width=600",
-      category: "data-visualization",
-      technologies: ["Tableau", "Python", "SQL", "R"],
-      links: {
-        demo: "#",
-        github: "#",
-      },
-      icon: BarChart4,
-    },
-    {
-      title: "Customer Churn Prediction",
-      description:
-        'Built a predictive model to identify customers at risk of churning, enabling proactive retention "Built a predictive model to identify customers at risk of churning, enabling proactive retention strategies and increasing customer lifetime value.',
-      image: "/placeholder.svg?height=400&width=600",
-      category: "machine-learning",
-      technologies: ["Scikit-learn", "Pandas", "SQL", "Power BI"],
-      links: {
-        demo: "#",
-        github: "#",
-      },
-      icon: Brain,
-    },
-    {
-      title: "Sales Forecasting System",
-      description:
-        "Developed a time-series forecasting system to predict sales trends across multiple product categories with high accuracy.",
-      image: "/placeholder.svg?height=400&width=600",
-      category: "data-analysis",
-      technologies: ["Prophet", "Python", "AWS", "Matplotlib"],
-      links: {
-        demo: "#",
-        github: "#",
-      },
-      icon: BarChart4,
     },
   ]
 
@@ -137,15 +125,27 @@ const Projects = () => {
           {filteredProjects.map((project, index) => (
             <div
               key={index}
-              className={`bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg project-card transition-all duration-1000 ${
+              className={`group bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-lg project-card transition-all duration-1000 ${
                 isVisible ? "opacity-100 transform-none" : "opacity-0 translate-y-10"
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               <div className="relative h-48 bg-gray-200 dark:bg-gray-700 overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center bg-primary/10">
-                  <project.icon className="text-primary" size={64} />
-                </div>
+                {project.image ? (
+                  <div className="relative h-full w-full">
+                    <Image
+                      src={project.image || "/placeholder.svg"}
+                      alt={project.title}
+                      fill
+                      className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center bg-primary/10">
+                    <project.icon className="text-primary" size={64} />
+                  </div>
+                )}
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 dark:text-white">{project.title}</h3>
@@ -165,6 +165,8 @@ const Projects = () => {
                 <div className="flex justify-between">
                   <a
                     href={project.links.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center text-primary hover:text-primary/80 transition-colors"
                   >
                     <ExternalLink size={16} className="mr-1" />
@@ -172,6 +174,8 @@ const Projects = () => {
                   </a>
                   <a
                     href={project.links.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center text-primary hover:text-primary/80 transition-colors"
                   >
                     <Github size={16} className="mr-1" />

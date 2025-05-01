@@ -27,28 +27,20 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Senior Data Analyst",
-      company: "Tech Solutions Inc.",
-      location: "New York, NY",
+      title: "Data Analyst",
+      company: "Vero Ventures",
+      location: "Abbotsford, BC",
       period: "Jan 2023 - Present",
       description:
-        "Led a team of analysts in developing predictive models for customer churn reduction, resulting in a 15% decrease in customer attrition. Implemented advanced data visualization dashboards using Tableau, improving decision-making processes across departments.",
+        "Built a comprehensive comparison system analyzing whole life participating insurance policies from leading Canadian providers like Canada Life, Sun Life, Equitable Life, and Manulife. Focused on reverse-engineering product structures including Guaranteed Cash Value (GCV), Total Cash Value (TCV), Premium Patterns, and Death Benefit Growth. Developed data-driven models and visualizations to compare policies across multiple scenarios, helping financial advisors understand product behaviors and recommend optimized solutions to clients.",
     },
     {
-      title: "Data Analyst",
-      company: "DataDriven Corp",
-      location: "Boston, MA",
-      period: "Mar 2021 - Dec 2022",
+      title: "NLP Engineer",
+      company: "University Project",
+      location: "Abbotsford, BC",
+      period: "Jan 2023 - Present",
       description:
-        "Developed and maintained ETL processes for data warehousing. Created statistical models to forecast sales trends with 92% accuracy. Collaborated with cross-functional teams to implement data-driven solutions.",
-    },
-    {
-      title: "Data Science Intern",
-      company: "AI Innovations",
-      location: "Remote",
-      period: "Jun 2020 - Feb 2021",
-      description:
-        "Assisted in developing machine learning algorithms for image recognition. Performed data cleaning and preprocessing tasks. Contributed to research papers on neural network optimization techniques.",
+        "Designed and developed a real-time AI-powered Immigration Storyboard Web Application using Next.js, TypeScript, and Resend API. This project enables users to explore complex Canadian immigration processes like Study Permit, PR, PGWP, and Citizenship through dynamically generated step-by-step storyboards powered by LLM (Large Language Models). Integrated a passwordless login system using OTP email authentication for enhanced security and user experience. Deployed the full-stack application on Vercel with optimized serverless architecture and dynamic API routing",
     },
   ]
 
