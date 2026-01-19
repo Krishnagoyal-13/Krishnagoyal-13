@@ -6,7 +6,7 @@ import Image from "next/image"
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false)
-  const roles = ["Data Scientist", "Full Stack Developer", "Machine Learning Engineer", "Software Engineer"]
+  const roles = ["Software Engineer", "Machine Learning Engineer"]
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0)
   const [displayText, setDisplayText] = useState("")
   const [isDeleting, setIsDeleting] = useState(false)
