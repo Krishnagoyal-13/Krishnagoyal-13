@@ -6,7 +6,7 @@ import Image from "next/image"
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false)
-  const roles = ["Data Analyst", "Machine Learning Engineer", "Data Scientist"]
+  const roles = ["Data Scientist", "Full Stack Developer", "Machine Learning Engineer", "Software Engineer"]
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0)
   const [displayText, setDisplayText] = useState("")
   const [isDeleting, setIsDeleting] = useState(false)
@@ -18,6 +18,7 @@ const Hero = () => {
 
   useEffect(() => {
     const currentRole = roles[currentRoleIndex]
+    if (!currentRole) return
 
     const handleTyping = () => {
       setDisplayText((prev) => {
@@ -65,8 +66,7 @@ const Hero = () => {
               </p>
             </div>
             <p className="text-xl max-w-2xl mx-auto md:mx-0 mb-10 text-gray-200">
-              Transforming complex data into actionable insights and building intelligent solutions that drive business
-              value.
+              Building robust backend systems and full-stack solutions. Specializing in system design, data architecture, and API development to solve real-world problems at scale.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a

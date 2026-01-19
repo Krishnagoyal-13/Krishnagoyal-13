@@ -27,20 +27,20 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Data Analyst",
+      title: "Software Engineer Intern",
       company: "Vero Ventures",
       location: "Abbotsford, BC",
-      period: "Jan 2025 - Present",
+      period: "Jan 2025 - Sep 2025",
       description:
-        "Built a comprehensive comparison system analyzing whole life participating insurance policies from leading Canadian providers like Canada Life, Sun Life, Equitable Life, and Manulife. Focused on reverse-engineering product structures including Guaranteed Cash Value (GCV), Total Cash Value (TCV), Premium Patterns, and Death Benefit Growth. Developed data-driven models and visualizations to compare policies across multiple scenarios, helping financial advisors understand product behaviors and recommend optimized solutions to clients.",
+        "Engineered high-precision backend data pipelines in Python for financial growth modeling, prioritizing Data Integrity (DBMS) and Object-Oriented (OOPS) principles to handle complex non-linear calculations. Architected RESTful APIs using Django/DRF to expose complex financial simulation results to a Next.js frontend, ensuring low-latency data retrieval.",
     },
     {
-      title: "NLP Engineer",
-      company: "University Project",
-      location: "Abbotsford, BC",
-      period: "Jan 2025 - Present",
+      title: "Full Stack Developer Intern",
+      company: "Car Studio Corp",
+      location: "BC, Canada",
+      period: "Jan 2024 - Aug 2024",
       description:
-        "Designed and developed a real-time AI-powered Immigration Storyboard Web Application using Next.js, TypeScript, and Resend API. This project enables users to explore complex Canadian immigration processes like Study Permit, PR, PGWP, and Citizenship through dynamically generated step-by-step storyboards powered by LLM (Large Language Models). Integrated a passwordless login system using OTP email authentication for enhanced security and user experience. Deployed the full-stack application on Vercel with optimized serverless architecture and dynamic API routing",
+        "Built a real-time verification and decision engine using Node.js, Python, and SQL, performing client ID matching, car availability checks, and rule-based consistency validation across dealership data. Designed an automated billing workflow with Python/NumPy, generating computed price breakdowns, producing PDF deal reports, and sending them to customers via Gmail SMTP.",
     },
   ]
 

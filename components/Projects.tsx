@@ -29,25 +29,25 @@ const Projects = () => {
 
   const projectList = [
     {
-      title: "Insurance Analysis Dashboard",
+      title: "Debt Optimization Engine",
       description:
-        "Developed a comprehensive comparison system analyzing whole life participating insurance policies from leading Canadian providers. Created data-driven models and visualizations to compare policies across multiple scenarios, helping financial advisors understand product behaviors.",
-      image: "/images/insurance-chart.png",
-      category: "data-visualization",
-      technologies: ["Tableau", "Python", "SQL", "Data Modeling"],
+        "High-performance debt simulation API engineered in Python/Django implementing Strategy Design Pattern for Avalanche and Snowball paydown algorithms. Prioritized Financial Precision using Decimal types for interest compounding calculations, eliminating floating-point errors. Designed scalable DBMS schema with proper normalization and automated Django migrations.",
+      image: "/placeholder.svg?height=400&width=600",
+      category: "backend-development",
+      technologies: ["Python", "Django/DRF", "PostgreSQL", "Strategy Pattern", "DBMS"],
       links: {
-        demo: "https://www.dynamicneedsanalysis.com/",
-        github: "https://github.com/Krishnagoyal-13/ChartVisualization",
+        demo: "#",
+        github: "https://github.com/Krishnagoyal-13/debt-optimization",
       },
       icon: LineChart,
     },
     {
       title: "Immigration Storyboard",
       description:
-        "Designed and developed a real-time AI-powered Immigration Storyboard Web Application using Next.js, TypeScript, and Resend API. This project helps users navigate the complex Canadian immigration process with personalized guidance.",
+        "Engineered scalable web-scraping system in Python using BeautifulSoup with modular parsing logic to transform unstructured IRCC storyboard data into structured formats. Built retrieval pipeline leveraging embeddings and LLMs for accurate, context-aware immigration information with search and ranking logic.",
       image: "/images/immigration-storyboard.png",
-      category: "data-analysis",
-      technologies: ["Next.js", "TypeScript", "AI", "PostgreSQL"],
+      category: "web-development",
+      technologies: ["Python", "BeautifulSoup", "LLM", "Data Pipeline", "ETL"],
       links: {
         demo: "https://immigration-storyboard.vercel.app",
         github: "https://github.com/Krishnagoyal-13/immigration-storyboard",
@@ -55,15 +55,15 @@ const Projects = () => {
       icon: BarChart4,
     },
     {
-      title: "American Sign Language Interpreter",
+      title: "Real-time Verification Engine",
       description:
-        "Developed a machine learning model to predict American Sign language, converting Sign to Text using Mobile Deployed System in Real Time.",
+        "Built comprehensive real-time verification and decision engine using Node.js, Python, and SQL performing client ID matching, car availability checks, and rule-based consistency validation. Designed automated billing workflow with Python/NumPy generating computed price breakdowns, PDF deal reports, and Gmail SMTP delivery.",
       image: "/placeholder.svg?height=400&width=600",
-      category: "machine-learning",
-      technologies: ["TensorFlow", "OpenCV", "Python", "Flutter"],
+      category: "backend-development",
+      technologies: ["Node.js", "Python", "SQL", "NumPy", "PDF Generation"],
       links: {
         demo: "#",
-        github: "https://github.com/Krishnagoyal-13/AmericanSignlanguageInterpreter",
+        github: "#",
       },
       icon: Brain,
     },
@@ -77,7 +77,7 @@ const Projects = () => {
         <h2 className="section-heading text-center dark:text-white">Projects</h2>
 
         <div className="flex justify-center mb-10">
-          <div className="inline-flex bg-white dark:bg-gray-900 p-1 rounded-lg shadow-md">
+          <div className="inline-flex bg-white dark:bg-gray-900 p-1 rounded-lg shadow-md flex-wrap gap-1 justify-center">
             <button
               onClick={() => setFilter("all")}
               className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
@@ -89,34 +89,24 @@ const Projects = () => {
               All
             </button>
             <button
-              onClick={() => setFilter("machine-learning")}
+              onClick={() => setFilter("backend-development")}
               className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                filter === "machine-learning"
+                filter === "backend-development"
                   ? "bg-primary text-white"
                   : "text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
               }`}
             >
-              Machine Learning
+              Backend Development
             </button>
             <button
-              onClick={() => setFilter("data-visualization")}
+              onClick={() => setFilter("web-development")}
               className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                filter === "data-visualization"
+                filter === "web-development"
                   ? "bg-primary text-white"
                   : "text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
               }`}
             >
-              Data Visualization
-            </button>
-            <button
-              onClick={() => setFilter("data-analysis")}
-              className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                filter === "data-analysis"
-                  ? "bg-primary text-white"
-                  : "text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-              }`}
-            >
-              Data Analysis
+              Full Stack
             </button>
           </div>
         </div>

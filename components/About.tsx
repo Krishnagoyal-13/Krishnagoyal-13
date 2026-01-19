@@ -68,17 +68,13 @@ const About = () => {
               <h3 className="text-2xl font-semibold mb-4 dark:text-white">Who I Am</h3>
               <div className="space-y-4">
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  I'm a passionate Data Analyst with 1+ years of experience in machine learning, statistical analysis,
-                  and data visualization. My expertise lies in developing predictive models and extracting meaningful
-                  insights from complex datasets.
+                  I'm a software engineer specializing in backend development, system design, and full-stack solutions. I excel at architecting scalable APIs, designing robust data systems, and implementing design patterns that solve complex business problems.
                 </p>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  With a pursuing Bachelor in Computer Information System and a strong background in mathematics, I've
-                  successfully led data Analyzing projects across various industries, including finance, and healthcare.
+                  Pursuing a Bachelor in Computer Information Systems (CGPA: 3.89/4.33), I have hands-on experience building production systems at Vero Ventures and Car Studio Corp. My expertise spans Python, Django, Node.js, SQL/PostgreSQL, and modern web technologies.
                 </p>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  My goal is to leverage data to solve real-world problems and help organizations make data-driven
-                  decisions that lead to measurable improvements in performance and outcomes.
+                  I'm passionate about writing clean, maintainable code and designing systems that scale. Whether it's financial modeling pipelines or real-time verification engines, I focus on precision, performance, and delivering value through well-architected solutions.
                 </p>
               </div>
             </div>
@@ -93,7 +89,7 @@ const About = () => {
                     <div className="flex flex-wrap gap-4 text-sm text-gray-600 dark:text-gray-400 mt-1">
                       <span className="flex items-center">
                         <Calendar size={14} className="mr-1" />
-                        2021-2025
+                        September 2021 – June 2025
                       </span>
                       <span className="flex items-center">
                         <MapPin size={14} className="mr-1" />
@@ -101,8 +97,7 @@ const About = () => {
                       </span>
                     </div>
                     <p className="mt-2 text-gray-600 dark:text-gray-300">
-                      Focused on data science, machine learning, and statistical analysis. Completed projects in
-                      predictive modeling and data visualization.
+                      CGPA: 3.89 / 4.33. Specialized in backend systems, database design, system architecture, and design patterns. Focused on scalable API development and financial data modeling.
                     </p>
                   </div>
                 </div>

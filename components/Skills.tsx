@@ -26,23 +26,25 @@ const Skills = () => {
   }, [])
 
   const technicalSkills = [
-    { name: "Python", level: 100 },
-    { name: "SQL", level: 100 },
-    { name: "Machine Learning", level: 80 },
-    { name: "Data Visualization", level: 100 },
-    { name: "Statistical Analysis", level: 85 },
-    { name: "Deep Learning", level: 80 },
+    { name: "Python (Advanced)", level: 95 },
+    { name: "SQL / Database Design", level: 100 },
+    { name: "JavaScript/TypeScript", level: 90 },
+    { name: "System Design & Architecture", level: 90 },
+    { name: "Backend Development", level: 95 },
+    { name: "RESTful APIs & Django/DRF", level: 90 },
+    { name: "Java / C++", level: 80 },
+    { name: "OOP & Design Patterns", level: 90 },
   ]
 
   const toolsAndFrameworks = [
-    { name: "TensorFlow/PyTorch", icon: Brain, description: "Deep learning frameworks for building neural networks" },
-    { name: "Pandas/NumPy", icon: Layers, description: "Data manipulation and numerical computing libraries" },
-    { name: "SQL/NoSQL", icon: Database, description: "Database query languages and systems" },
-    { name: "Tableau/Power BI", icon: BarChart, description: "Data visualization tools" },
-    { name: "Scikit-learn", icon: TrendingUp, description: "Machine learning library for classical algorithms" },
-    { name: "Git/GitHub", icon: Code, description: "Version control systems" },
-    { name: "AWS/Azure", icon: Server, description: "Cloud computing platforms" },
-    { name: "Matplotlib/Seaborn", icon: LineChart, description: "Visualization libraries for Python" },
+    { name: "Django/DRF", icon: Server, description: "Backend framework with high-performance API development" },
+    { name: "PostgreSQL/SQLite", icon: Database, description: "Relational databases with ACID properties and ORM" },
+    { name: "Node.js/Express", icon: Server, description: "Backend runtime and lightweight web framework" },
+    { name: "React/Next.js", icon: Code, description: "Modern frontend frameworks for scalable applications" },
+    { name: "Pandas/NumPy", icon: Layers, description: "Data systems, ETL pipelines, and numerical computing" },
+    { name: "BeautifulSoup/Web Scraping", icon: Brain, description: "Data extraction and transformation" },
+    { name: "Git & Docker", icon: TrendingUp, description: "Version control and containerization" },
+    { name: "Design Patterns & Architecture", icon: BarChart, description: "Strategy pattern, SOLID principles, system design" },
   ]
 
   return (
