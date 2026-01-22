@@ -26,25 +26,25 @@ const Skills = () => {
   }, [])
 
   const technicalSkills = [
-    { name: "Python (Advanced)", level: 95 },
-    { name: "SQL / Database Design", level: 100 },
-    { name: "JavaScript/TypeScript", level: 90 },
-    { name: "System Design & Architecture", level: 90 },
-    { name: "Backend Development", level: 95 },
-    { name: "RESTful APIs & Django/DRF", level: 90 },
-    { name: "Java / C++", level: 80 },
-    { name: "OOP & Design Patterns", level: 90 },
+    { name: "Python" },
+    { name: "Deep Learning" },
+    { name: "SQL & Data Engineering" },
+    { name: "Machine Learning" },
+    { name: "JavaScript/TypeScript" },
+    { name: "Flask/Django" },
+    { name: "Data Visualization" },
+    { name: "Java / C++" },
   ]
 
   const toolsAndFrameworks = [
-    { name: "Django/DRF", icon: Server, description: "Backend framework with high-performance API development" },
-    { name: "PostgreSQL/SQLite", icon: Database, description: "Relational databases with ACID properties and ORM" },
-    { name: "Node.js/Express", icon: Server, description: "Backend runtime and lightweight web framework" },
-    { name: "React/Next.js", icon: Code, description: "Modern frontend frameworks for scalable applications" },
-    { name: "Pandas/NumPy", icon: Layers, description: "Data systems, ETL pipelines, and numerical computing" },
-    { name: "BeautifulSoup/Web Scraping", icon: Brain, description: "Data extraction and transformation" },
-    { name: "Git & Docker", icon: TrendingUp, description: "Version control and containerization" },
-    { name: "Design Patterns & Architecture", icon: BarChart, description: "Strategy pattern, SOLID principles, system design" },
+    { name: "TensorFlow & PyTorch", icon: Brain, description: "Deep learning frameworks for neural networks" },
+    { name: "Flask & Django/DRF", icon: Server, description: "Backend frameworks for scalable API development" },
+    { name: "Scikit-Learn", icon: BarChart, description: "Machine learning algorithms and data modeling" },
+    { name: "Pandas & NumPy", icon: Layers, description: "Data manipulation, ETL pipelines, and analytics" },
+    { name: "MySQL & PostgreSQL", icon: Database, description: "Relational databases and query optimization" },
+    { name: "Node.js & Python", icon: Code, description: "Full-stack development with JavaScript and Python" },
+    { name: "Hadoop & Spark", icon: TrendingUp, description: "Big data processing and distributed computing" },
+    { name: "Docker & Git", icon: Server, description: "Containerization and version control" },
   ]
 
   return (
@@ -58,23 +58,17 @@ const Skills = () => {
           }`}
         >
           <div className="mb-16">
-            <h3 className="text-2xl font-semibold mb-8 text-center dark:text-white">Technical Proficiency</h3>
-            <div className="grid gap-6">
+            <h3 className="text-2xl font-semibold mb-8 text-center dark:text-white">Technical Skills</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {technicalSkills.map((skill, index) => (
-                <div key={index}>
-                  <div className="flex justify-between mb-2">
-                    <span className="font-medium dark:text-white">{skill.name}</span>
-                    <span className="text-gray-600 dark:text-gray-300">{skill.level}%</span>
-                  </div>
-                  <div className="skill-bar">
-                    <div
-                      className="skill-progress"
-                      style={{
-                        width: isVisible ? `${skill.level}%` : "0%",
-                        transitionDelay: `${index * 100}ms`,
-                      }}
-                    ></div>
-                  </div>
+                <div
+                  key={index}
+                  className="bg-white dark:bg-gray-900 p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 text-center"
+                  style={{
+                    transitionDelay: `${index * 50}ms`,
+                  }}
+                >
+                  <span className="font-medium dark:text-white text-sm">{skill.name}</span>
                 </div>
               ))}
             </div>

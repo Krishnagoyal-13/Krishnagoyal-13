@@ -27,20 +27,20 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Software Engineer Intern",
+      title: "Machine Learning Intern",
       company: "Vero Ventures",
-      location: "Abbotsford, BC",
-      period: "Jan 2025 - Sep 2025",
+      location: "BC, Canada",
+      period: "January 2025 – September 2025",
       description:
-        "Engineered high-precision backend data pipelines in Python for financial growth modeling, prioritizing Data Integrity (DBMS) and Object-Oriented (OOPS) principles to handle complex non-linear calculations. Architected RESTful APIs using Django/DRF to expose complex financial simulation results to a Next.js frontend, ensuring low-latency data retrieval.",
+        "Orchestrated high-precision Data Science pipelines in Python, increasing growth prediction accuracy by 15% via optimized feature engineering. Spearheaded automated validation rules, achieving 90% stakeholder satisfaction by eliminating data inconsistencies. Architected scalable RESTful APIs using Flask and Django to serve complex simulations with low-latency retrieval.",
     },
     {
       title: "Full Stack Developer Intern",
       company: "Car Studio Corp",
       location: "BC, Canada",
-      period: "Jan 2024 - Aug 2024",
+      period: "January 2024 – August 2024",
       description:
-        "Built a real-time verification and decision engine using Node.js, Python, and SQL, performing client ID matching, car availability checks, and rule-based consistency validation across dealership data. Designed an automated billing workflow with Python/NumPy, generating computed price breakdowns, producing PDF deal reports, and sending them to customers via Gmail SMTP.",
+        "Deployed a verification engine using Node.js and Python that attained 98% accuracy in client ID matching. Automated end-to-end ETL pipelines with NumPy, reducing manual report generation time by 70%. Fine-tuned complex MySQL queries, resulting in a 25% surge in data retrieval speeds for large-scale inventory.",
     },
   ]
 

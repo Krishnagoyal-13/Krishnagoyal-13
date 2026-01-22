@@ -29,43 +29,43 @@ const Projects = () => {
 
   const projectList = [
     {
-      title: "Debt Optimization Engine",
-      description:
-        "High-performance debt simulation API engineered in Python/Django implementing Strategy Design Pattern for Avalanche and Snowball paydown algorithms. Prioritized Financial Precision using Decimal types for interest compounding calculations, eliminating floating-point errors. Designed scalable DBMS schema with proper normalization and automated Django migrations.",
-      image: "/placeholder.svg?height=400&width=600",
-      category: "backend-development",
-      technologies: ["Python", "Django/DRF", "PostgreSQL", "Strategy Pattern", "DBMS"],
-      links: {
-        demo: "#",
-        github: "https://github.com/Krishnagoyal-13/debt-optimization",
-      },
-      icon: LineChart,
-    },
-    {
       title: "Immigration Storyboard",
       description:
-        "Engineered scalable web-scraping system in Python using BeautifulSoup with modular parsing logic to transform unstructured IRCC storyboard data into structured formats. Built retrieval pipeline leveraging embeddings and LLMs for accurate, context-aware immigration information with search and ranking logic.",
+        "Engineered a scalable web-scraping system in Python, transforming 10,000+ rows of unstructured IRCC data into MySQL. Integrated LLMs and embedding-based retrieval, boosting search relevance by 40% via refined ranking logic. Leveraged OOP principles to build modular parsing logic, decreasing code maintenance overhead by 15%.",
       image: "/images/immigration-storyboard.png",
-      category: "web-development",
-      technologies: ["Python", "BeautifulSoup", "LLM", "Data Pipeline", "ETL"],
+      category: "machine-learning",
+      technologies: ["Python", "BeautifulSoup", "LLM", "MySQL", "NLP"],
       links: {
         demo: "https://immigration-storyboard.vercel.app",
         github: "https://github.com/Krishnagoyal-13/immigration-storyboard",
       },
-      icon: BarChart4,
+      icon: Brain,
+    },
+    {
+      title: "Sign Language Recognition System",
+      description:
+        "Constructed a real-time translation system using CNNs that achieved 96.5% accuracy across 26 hand gestures. Streamlined model inference time using techniques such as quantization and pruning by 30%, enabling high-efficiency real-time performance on edge devices.",
+      image: "/placeholder.svg?height=400&width=600",
+      category: "machine-learning",
+      technologies: ["TensorFlow", "CNN", "OpenCV", "Deep Learning", "Edge Computing"],
+      links: {
+        demo: "#",
+        github: "https://github.com/Krishnagoyal-13/AmericanSignlanguageInterpreter",
+      },
+      icon: LineChart,
     },
     {
       title: "Real-time Verification Engine",
       description:
-        "Built comprehensive real-time verification and decision engine using Node.js, Python, and SQL performing client ID matching, car availability checks, and rule-based consistency validation. Designed automated billing workflow with Python/NumPy generating computed price breakdowns, PDF deal reports, and Gmail SMTP delivery.",
+        "Deployed a verification engine using Node.js and Python that attained 98% accuracy in client ID matching. Automated end-to-end ETL pipelines with NumPy, reducing manual report generation time by 70%. Fine-tuned complex MySQL queries, resulting in a 25% surge in data retrieval speeds for large-scale inventory.",
       image: "/placeholder.svg?height=400&width=600",
       category: "backend-development",
-      technologies: ["Node.js", "Python", "SQL", "NumPy", "PDF Generation"],
+      technologies: ["Node.js", "Python", "MySQL", "ETL", "NumPy"],
       links: {
         demo: "#",
         github: "#",
       },
-      icon: Brain,
+      icon: BarChart4,
     },
   ]
 
@@ -89,6 +89,16 @@ const Projects = () => {
               All
             </button>
             <button
+              onClick={() => setFilter("machine-learning")}
+              className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                filter === "machine-learning"
+                  ? "bg-primary text-white"
+                  : "text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+              }`}
+            >
+              Machine Learning
+            </button>
+            <button
               onClick={() => setFilter("backend-development")}
               className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                 filter === "backend-development"
@@ -97,16 +107,6 @@ const Projects = () => {
               }`}
             >
               Backend Development
-            </button>
-            <button
-              onClick={() => setFilter("web-development")}
-              className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                filter === "web-development"
-                  ? "bg-primary text-white"
-                  : "text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-              }`}
-            >
-              Full Stack
             </button>
           </div>
         </div>

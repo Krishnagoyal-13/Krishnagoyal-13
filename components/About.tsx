@@ -53,11 +53,11 @@ const About = () => {
                   </li>
                   <li className="flex items-center text-gray-600 dark:text-gray-300">
                     <Phone className="mr-3 text-primary" size={18} />
-                    <span>+1 (604) 832-9175</span>
+                    <span>+91 99143 81960</span>
                   </li>
                   <li className="flex items-center text-gray-600 dark:text-gray-300">
                     <MapPin className="mr-3 text-primary" size={18} />
-                    <span>Abbotsford, BC, Canada</span>
+                    <span>India</span>
                   </li>
                 </ul>
               </div>
@@ -68,13 +68,13 @@ const About = () => {
               <h3 className="text-2xl font-semibold mb-4 dark:text-white">Who I Am</h3>
               <div className="space-y-4">
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  I'm a software engineer specializing in backend development, system design, and full-stack solutions. I excel at architecting scalable APIs, designing robust data systems, and implementing design patterns that solve complex business problems.
+                  I'm a machine learning and full-stack engineer passionate about solving complex problems through data science and intelligent systems. With expertise in deep learning, data pipelines, and backend architecture, I excel at building scalable solutions that drive measurable impact.
                 </p>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  Pursuing a Bachelor in Computer Information Systems (CGPA: 3.89/4.33), I have hands-on experience building production systems at Vero Ventures and Car Studio Corp. My expertise spans Python, Django, Node.js, SQL/PostgreSQL, and modern web technologies.
+                  Accomplished a Bachelor in Computer Information Systems (CGPA: 3.87/4.33) from University of the Fraser Valley, I have hands-on experience with high-precision data science pipelines at Vero Ventures and full-stack development at Car Studio Corp. My skill set spans Python, Flask, Django, Node.js, deep learning frameworks, and data infrastructure.
                 </p>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
-                  I'm passionate about writing clean, maintainable code and designing systems that scale. Whether it's financial modeling pipelines or real-time verification engines, I focus on precision, performance, and delivering value through well-architected solutions.
+                  I'm driven by creating intelligent systems that leverage machine learning and optimize data workflows. From orchestrating data pipelines to building real-time applications, I focus on precision, performance, and delivering solutions that transform data into actionable insights.
                 </p>
               </div>
             </div>
@@ -97,7 +97,7 @@ const About = () => {
                       </span>
                     </div>
                     <p className="mt-2 text-gray-600 dark:text-gray-300">
-                      CGPA: 3.89 / 4.33. Specialized in backend systems, database design, system architecture, and design patterns. Focused on scalable API development and financial data modeling.
+                      CGPA: 3.87 / 4.33. Specialized in machine learning systems, data science pipelines, and full-stack development. Coursework in deep learning, data analytics, and scalable system architecture.
                     </p>
                   </div>
                 </div>

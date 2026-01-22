@@ -68,8 +68,7 @@ const Contact = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-6 dark:text-white">Contact Information</h3>
             <p className="text-gray-600 dark:text-gray-300 mb-8">
-              Feel free to reach out to me for collaboration, job opportunities, or just to say hello. I'm always open
-              to discussing new projects and ideas.
+              I'm always interested in connecting with fellow developers, collaborators, and anyone excited about machine learning, data science, or full-stack development. Feel free to reach out for opportunities or to discuss new ideas!
             </p>
             <div className="space-y-6">
               <a
